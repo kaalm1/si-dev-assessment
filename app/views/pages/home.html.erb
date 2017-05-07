@@ -1,13 +1,20 @@
-<h1>Hello Welcome to Send-A-SMS!</h1>
-    <p> For your convience, please enter the following:</p>
+<head>
+<link rel="stylesheet" type="text/css" href="https://github.com/kaalm1/si-dev-assessment/blob/master/vendor/assets/stylesheets/styles.css">
+</head>
 
+<div class="form-style-2">
+<div class="form-style-2-heading">Welcome to Send-A-SMS!</div>
 <%= form_tag("/sms/send", method: "post") do %>
-  <%= label_tag(:name, "Name:") %><br>
-  <%= text_field_tag(:name) %> <br>
-    <%= label_tag(:message, "Message:") %> <br>
-  <%= text_field_tag(:message) %> <br>
+  <%= label_tag(:name, "Name:") %>
+  <%= text_field_tag(:name) %> 
+  <%= label_tag(:message, "Message:") %> 
+  <%= text_field_tag(:message) %> 
     <%= label_tag(:number, "Number:") %><br>
   <%= text_field_tag(:number) %><br><br>
 <%= submit_tag("Submit") %>
  
 <% end %>
+</div>
+
+
+
