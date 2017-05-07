@@ -5,8 +5,8 @@ class PagesController < ApplicationController
   def sms
      require 'twilio-ruby'
 
-      account_sid = ENV["twilio_account_id"] # Your Account SID from www.twilio.com/console
-      auth_token = ENV["twilio_token"]   # Your Auth Token from www.twilio.com/console
+      account_sid = "ACa72f1966df773899d8bf7a49987f861e" # Your Account SID from www.twilio.com/console
+      auth_token = "03b48b02198bb8db0d5b1fbc1c9ae34a"   # Your Auth Token from www.twilio.com/console
 
       @client = Twilio::REST::Client.new account_sid, auth_token
       message = @client.account.messages.create(:body => params[:message],
