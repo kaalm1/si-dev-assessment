@@ -6,9 +6,9 @@
 <div class="form-style-2-heading">Welcome to Send-A-SMS!</div>
 <%= form_tag("/sms/send", method: "post") do %>
   <%= label_tag(:name, "Name:", :class => "form-style-2-label") %>
-  <%= text_field_tag(:name,nil,:class => "input-field") %> <br>
+  <%= text_field_tag(:name,nil,:class => "input-field") %> <br><br>
       <%= label_tag(:number, "Number:",:class => "form-style-2-label") %>
-  <%= text_field_tag(:number, nil,:class => "tel-number-field") %><br>
+  <%= text_field_tag(:number, nil,:class => "tel-number-field") %><br><br>
   <%= label_tag(:message, "Message:", :class => "form-style-2-label") %> 
   <%= text_field_tag(:message,nil, :class => "textarea-field") %> <br><br>
 
