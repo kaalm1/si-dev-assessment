@@ -11,17 +11,17 @@
     margin-bottom: 20px;
     font-size: 15px;
     padding-bottom: 3px;
+  
 }
 .form-style-2-label{
     display: block;
     margin: 0px 0px 15px 0px;
-}
-.form-style-2-label-span{
     width: 100px;
     font-weight: bold;
     float: left;
     padding-top: 8px;
     padding-right: 5px;
+    font: 13px Arial, Helvetica, sans-serif;
 }
 .form-style-2 span.required{
     color:red;
